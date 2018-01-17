@@ -4,7 +4,8 @@ module.exports = {
     "destructuring",
     "jsx-max-len",
     "prettier",
-    "react"
+    "react",
+    "test-names"
   ],
   extends: ["airbnb"],
   rules: {
@@ -12,6 +13,7 @@ module.exports = {
 
     "destructuring/in-methods-params": "error",
     "compat/compat": "error",
+    "test-names/blacklist-word-in-test-name": [2, "should"],
 
     // Ternary
     "no-nested-ternary": "error",
