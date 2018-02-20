@@ -13,7 +13,10 @@ module.exports = {
 
     "destructuring/in-methods-params": "error",
     "compat/compat": "error",
-    "test-names/blacklist-word-in-test-name": [2, "should"],
+    "test-names/blacklist-word-in-test-name": [
+      2,
+      { words: ["should"], caseInsensitive: true }
+    ],
 
     // Ternary
     "no-nested-ternary": "error",
